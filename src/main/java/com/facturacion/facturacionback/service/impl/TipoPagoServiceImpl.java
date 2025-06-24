@@ -1,0 +1,23 @@
+package com.example.demo.service.impl;
+
+import com.example.demo.model.TipoPago;
+import com.example.demo.repository.TipoPagoRepository;
+import com.example.demo.service.TipoPagoService;
+import lombok.RequiredArgsConstructor;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Optional;
+
+@Service @RequiredArgsConstructor
+@Transactional
+public class TipoPagoServiceImpl implements TipoPagoService {
+
+    private final TipoPagoRepository repo;
+
+    public TipoPago save(TipoPago tipoPago) { return repo.save(tipoPago); }
+    public List<TipoPago> findAll()          { return repo.findAll(); }
+    public Optional<TipoPago> findById(Long id){ return repo.findById(id); }
+    public void deleteById(Long id)          { repo.deleteById(id); }
+}
