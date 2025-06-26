@@ -42,5 +42,6 @@ public class Factura {
     private TipoPago tipoPago;
 
     @OneToMany(mappedBy = "factura", cascade = CascadeType.ALL)
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<ItemFactura> items = new ArrayList<>();
 }

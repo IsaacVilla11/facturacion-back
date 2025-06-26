@@ -33,5 +33,6 @@ public class Producto {
     private Proveedor proveedor;
 
     @OneToMany(mappedBy = "producto")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<ItemFactura> items = new ArrayList<>();
 }

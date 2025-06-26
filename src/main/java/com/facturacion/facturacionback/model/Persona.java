@@ -29,8 +29,10 @@ public class Persona {
 
     /* Relaciones */
     @OneToOne(mappedBy = "persona")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private Usuario usuario;
 
     @OneToMany(mappedBy = "persona")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Factura> facturas = new ArrayList<>();
 }

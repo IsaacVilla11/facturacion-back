@@ -16,5 +16,7 @@ public class Clasificacion {
     private String grupo;
 
     @OneToMany(mappedBy = "clasificacion")
+    @com.fasterxml.jackson.annotation.JsonIgnore
     private List<Producto> productos = new ArrayList<>();
+
 }
