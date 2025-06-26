@@ -13,11 +13,19 @@ public class ItemFactura {
 
     @Column(nullable = false)
     private Integer cantidad;
-
+    /*
     @Column(precision = 10, scale = 2)
     private Double precio;
+    */
+    @Column()
+    private Double precio;
 
+    /*
     @Column(precision = 12, scale = 2)
+    private Double subtotal;
+    */
+
+    @Column()
     private Double subtotal;
 
     /* Relaciones */

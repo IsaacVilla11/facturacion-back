@@ -13,8 +13,11 @@ public class Producto {
     private Long idProducto;
 
     private Integer stock = 0;
-
+    /*
     @Column(precision = 10, scale = 2)
+    private Double precioUnitario;
+     */
+    @Column()
     private Double precioUnitario;
 
     @Column(length = 20)

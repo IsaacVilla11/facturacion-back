@@ -18,10 +18,20 @@ public class Factura {
 
     private LocalDate fecha;
 
+    //isac//
+    /*
     @Column(precision = 10, scale = 2)
     private Double descuento = 0.0;
+    */
+    //erick
+    @Column()
+    private Double descuento;
 
+    /*
     @Column(precision = 12, scale = 2)
+    private Double total;
+     */
+    @Column()
     private Double total;
 
     /* Relaciones */
