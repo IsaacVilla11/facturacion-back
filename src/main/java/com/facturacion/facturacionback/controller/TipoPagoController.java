@@ -1,7 +1,7 @@
-package com.example.demo.controller;
+package com.facturacion.facturacionback.controller;
 
-import com.example.demo.model.TipoPago;
-import com.example.demo.service.TipoPagoService;
+import com.facturacion.facturacionback.model.TipoPago;
+import com.facturacion.facturacionback.service.TipoPagoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

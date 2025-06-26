@@ -1,8 +1,8 @@
-package com.example.demo.service.impl;
+package com.facturacion.facturacionback.service.impl;
 
-import com.example.demo.model.TipoPago;
-import com.example.demo.repository.TipoPagoRepository;
-import com.example.demo.service.TipoPagoService;
+import com.facturacion.facturacionback.model.TipoPago;
+import com.facturacion.facturacionback.repository.TipoPagoRepository;
+import com.facturacion.facturacionback.service.TipoPagoService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

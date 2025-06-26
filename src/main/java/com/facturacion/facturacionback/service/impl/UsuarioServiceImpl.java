@@ -1,8 +1,8 @@
-package com.example.demo.service.impl;
+package com.facturacion.facturacionback.service.impl;
 
-import com.example.demo.model.Usuario;
-import com.example.demo.repository.UsuarioRepository;
-import com.example.demo.service.UsuarioService;
+import com.facturacion.facturacionback.model.Usuario;
+import com.facturacion.facturacionback.repository.UsuarioRepository;
+import com.facturacion.facturacionback.service.UsuarioService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -16,7 +16,7 @@ public class UsuarioServiceImpl implements UsuarioService {
 
     private final UsuarioRepository repo;
 
-    public Usuario save(Usuario u)           { return repo.save(u); }
+    public Usuario save(Usuario usuario)           { return repo.save(usuario); }
     public List<Usuario> findAll()           { return repo.findAll(); }
     public Optional<Usuario> findById(Long id){ return repo.findById(id); }
     public Optional<Usuario> findByUser(String user){ return repo.findByUser(user); }

@@ -1,6 +1,6 @@
-package com.example.demo.service;
+package com.facturacion.facturacionback.service;
 
-import com.example.demo.model.Proveedor;
+import com.facturacion.facturacionback.model.Proveedor;
 import java.util.List;
 import java.util.Optional;
 

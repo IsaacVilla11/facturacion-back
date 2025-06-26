@@ -1,6 +1,6 @@
-package com.example.demo.repository;
+package com.facturacion.facturacionback.repository;
 
-import com.example.demo.model.Persona;
+import com.facturacion.facturacionback.model.Persona;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface PersonaRepository extends JpaRepository<Persona, Long> { }
